@@ -1,0 +1,12 @@
+TECHNICAL EXAM INSTRUCTIONS:
+
+Create a responsive website for web and mobile devices.
+
+You may refer to the attached sample files:
+Web Design – Desktop.jpg
+Web Design – Mobile.jpg
+
+Do your best to closely replicate the provided design references.
+However, you may also include additional designs or images that you believe are necessary to complete your work.
+
+Please ensure that your output is viewable in HTML format. Once completed, kindly send your work to this email.
