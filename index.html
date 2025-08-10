@@ -140,11 +140,15 @@
 				color: white;
 			}
 			.hero-section {
-				display: flex;
 				flex-direction: column;
 				text-align: center;
+				height: 250px;
+				background-image: url('./Resources/Images/hero.png');
+				display: flex;
 				align-items: center;
-				justify-content: center;
+				justify-content: space-around;
+				background-size: cover;
+				background-position: center;
 			}
 			header {
 				display: flex;
@@ -162,14 +166,79 @@
 				display: none;
 			}
 			@media screen and (min-width: 1024px) {
+				.hero-section {
+					height: 400px;
+					justify-content: center;
+					gap: 20px;
+				}
+				header {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					width: 91%;
+				}
 				.logo {
-					width: 70%;
+					width: 15%;
 				}
 				.description {
 					display: block;
 				}
 				.team-members > :not(:first-child) {
 					display: block;
+				}
+				.team-members {
+					display: flex;
+					flex-direction: row;
+					gap: 10px;
+					align-items: center;
+					justify-content: space-evenly;
+					width: 91%;
+				}
+
+				.separator {
+					width: 25%;
+				}
+
+				.services {
+					max-width: 91%;
+					display: grid;
+					grid-template-columns: auto auto auto;
+					gap: 30px;
+				}
+
+				.footer {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 100%;
+				}
+
+				.footer > footer {
+					display: flex;
+					flex-direction: row-reverse;
+					justify-content: space-between;
+					align-items: center;
+					width: 91%;
+				}
+				.contact-section {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+				iframe {
+					height: 300px;
+				}
+				.contact-section > div {
+					width: 91%;
+					display: flex;
+					flex-direction: row-reverse;
+					justify-content: space-between;
+					align-items: center;
+					gap: 20px;
+				}
+				.profile {
+					width: 150px;
+					height: 150px;
 				}
 			}
 		</style>
@@ -219,22 +288,13 @@
 					stroke-linecap="round"
 					stroke-linejoin="round"
 					style="height: 24px; width: 24px"
-					class="h-6 w-6">
+					class="hamburger-menu">
 					<path d="M4 6h16M4 12h16M4 18h16" />
 				</svg>
 			</header>
 			<section
 				class="hero-section"
-				style="
-					position: relative;
-					height: 250px;
-					background-image: url('./Resources/Images/hero.png');
-					display: flex;
-					align-items: center;
-					justify-content: space-around;
-					background-size: cover;
-					background-position: center;
-				">
+				style="">
 				<h1 class="text-white">WE PROVIDE PROPER <span style="color: #26b71a">IT SOLUTIONS</span></h1>
 				<p class="text-xs text-white">OPTIMIZE SYSTEMS USING OUR YEARS OF EXPERIENCE</p>
 				<button style="background-color: transparent; color: white; border: 1px solid white; padding: 10px 35px">
@@ -243,14 +303,18 @@
 			</section>
 			<section class="service-section">
 				<h1 class="text-primary">Thurston Services</h1>
-				<div style="width: 50%; height: 1px; background-color: #b9b9b9; margin: 10px 0"></div>
+				<div
+					style="width: 50%; height: 1px; background-color: #b9b9b9; margin: 10px 0"
+					class="separator"></div>
 				<div class="services">
 					<div class="service">
 						<img
 							src="./Resources/Images/64/iconmonstr-medical-21-120 (1).png"
 							alt="" />
 						<h2 class="text-sm text-gray">Insurance Systems</h2>
-						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.</p>
+						<p class="description text-xs">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.
+						</p>
 					</div>
 
 					<div class="service">
@@ -258,7 +322,9 @@
 							src="./Resources/Images/64/iconmonstr-chart-4-120.png"
 							alt="" />
 						<h2 class="text-sm text-gray">Management Systems</h2>
-						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.</p>
+						<p class="description text-xs">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.
+						</p>
 					</div>
 
 					<div class="service">
@@ -266,49 +332,63 @@
 							src="./Resources/Images/64/iconmonstr-medical-19-120.png"
 							alt="" />
 						<h2 class="text-sm text-gray">Medical Billing</h2>
-						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.</p>
+						<p class="description text-xs">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.
+						</p>
 					</div>
 					<div class="service">
 						<img
 							src="./Resources/Images/64/iconmonstr-basket-21-120.png"
 							alt="" />
 						<h2 class="text-sm text-gray">E-Commerce</h2>
-						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.</p>
+						<p class="description text-xs">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.
+						</p>
 					</div>
 					<div class="service">
 						<img
 							src="./Resources/Images/64/iconmonstr-cube-1-120.png"
 							alt="" />
 						<h2 class="text-sm text-gray">3D Animations</h2>
-						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.</p>
+						<p class="description text-xs">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.
+						</p>
 					</div>
 					<div class="service">
 						<img
 							src="./Resources/Images/64/iconmonstr-code-6-120.png"
 							alt="" />
 						<h2 class="text-sm text-gray">Website Design</h2>
-						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.</p>
+						<p class="description text-xs">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.
+						</p>
 					</div>
 					<div class="service">
 						<img
 							src="./Resources/Images/64/iconmonstr-currency-1-120.png"
 							alt="" />
 						<h2 class="text-sm text-gray">Accounting Systems</h2>
-						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.</p>
+						<p class="description text-xs">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.
+						</p>
 					</div>
 					<div class="service">
 						<img
 							src="./Resources/Images/64/iconmonstr-help-5-120.png"
 							alt="" />
 						<h2 class="text-sm text-gray">Support</h2>
-						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.</p>
+						<p class="description text-xs">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.
+						</p>
 					</div>
 					<div class="service">
 						<img
 							src="./Resources/Images/64/iconmonstr-cloud-24-120 (1).png"
 							alt="" />
 						<h2 class="text-sm text-gray">Cloud Service</h2>
-						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.</p>
+						<p class="description text-xs">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.
+						</p>
 					</div>
 				</div>
 			</section>
@@ -361,74 +441,78 @@
 
 			<section class="contact-section">
 				<h1 class="text-primary">Contact Us</h1>
-				<h5 class="text-primary">Thurston Software Solutions, Inc.</h5>
-				<p class="text-xs text-gray">3rd Flr, Glialcon Bldg., #5 F. Blumentritt, San Juan City</p>
-				<div style="width: 100%">
-					<iframe
-						width="100%"
-						height="200"
-						frameborder="0"
-						scrolling="no"
-						marginheight="0"
-						marginwidth="0"
-						src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=5%20F.%20Blumentritt,%20San%20Juan%20City,%201500%20Metro%20Manila+(Thurston%20Software%20Solutions,%20Inc.)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-						><a href="https://www.mapsdirections.info/fr/calculer-la-population-sur-une-carte"
-							>Carte démographique</a
-						></iframe
-					>
-				</div>
-
 				<div>
-					<h4 class="text-primary">Get in Touch!</h4>
-					<p class="text-xs text-gray">For any question, please fill out all the fields.</p>
+					<div style="width: 100%">
+						<h5 class="text-primary">Thurston Software Solutions, Inc.</h5>
+						<p class="text-xs text-gray">3rd Flr, Glialcon Bldg., #5 F. Blumentritt, San Juan City</p>
+						<iframe
+							width="100%"
+							height="200"
+							frameborder="0"
+							scrolling="no"
+							marginheight="0"
+							marginwidth="0"
+							src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=5%20F.%20Blumentritt,%20San%20Juan%20City,%201500%20Metro%20Manila+(Thurston%20Software%20Solutions,%20Inc.)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+							><a href="https://www.mapsdirections.info/fr/calculer-la-population-sur-une-carte"
+								>Carte démographique</a
+							></iframe
+						>
+					</div>
 
-					<input
-						type="text"
-						placeholder="Your Name"
-						class="input" />
-					<input
-						type="email"
-						placeholder="Your Email Address"
-						class="input" />
-					<input
-						type="text"
-						placeholder="Type of Services"
-						name="service_type"
-						class="input" />
-					<textarea
-						class="input"
-						name=""
-						placeholder="Message"
-						id=""></textarea>
-					<button class="btn btn-primary">Submit</button>
+					<div>
+						<h4 class="text-primary">Get in Touch!</h4>
+						<p class="text-xs text-gray">For any question, please fill out all the fields.</p>
+
+						<input
+							type="text"
+							placeholder="Your Name"
+							class="input" />
+						<input
+							type="email"
+							placeholder="Your Email Address"
+							class="input" />
+						<input
+							type="text"
+							placeholder="Type of Services"
+							name="service_type"
+							class="input" />
+						<textarea
+							class="input"
+							name=""
+							placeholder="Message"
+							id=""></textarea>
+						<button class="btn btn-primary">Submit</button>
+					</div>
 				</div>
 			</section>
 
-			<footer class="footer">
-				<div class="social-icons">
-					<img
-						style="width: 24px; height: 24px"
-						src="./Resources/Images/fb.png"
-						alt="" />
-					<img
-						style="width: 24px; height: 24px"
-						src="./Resources/Images/twitter.png"
-						alt="" />
-					<img
-						style="width: 24px; height: 24px"
-						src="./Resources/Images/instagram.png"
-						alt="" />
-					<img
-						style="width: 24px; height: 24px"
-						src="./Resources/Images/linkedin.png"
-						alt="" />
-					<img
-						style="width: 24px; height: 24px"
-						src="./Resources/Images/g+.png"
-						alt="" />
-				</div>
-				<p class="text-xs">© 2017 Thurston Software Solutions, Inc. All Rights Reserved.</p>
-			</footer>
+			<div class="footer">
+				<footer>
+					<div class="social-icons">
+						<img
+							style="width: 24px; height: 24px"
+							src="./Resources/Images/fb.png"
+							alt="" />
+						<img
+							style="width: 24px; height: 24px"
+							src="./Resources/Images/twitter.png"
+							alt="" />
+						<img
+							style="width: 24px; height: 24px"
+							src="./Resources/Images/instagram.png"
+							alt="" />
+						<img
+							style="width: 24px; height: 24px"
+							src="./Resources/Images/linkedin.png"
+							alt="" />
+						<img
+							style="width: 24px; height: 24px"
+							src="./Resources/Images/g+.png"
+							alt="" />
+					</div>
+					<p class="text-xs">© 2017 Thurston Software Solutions, Inc. All Rights Reserved.</p>
+				</footer>
+			</div>
 		</main>
 	</body>
 </html>
