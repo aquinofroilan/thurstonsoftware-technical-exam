@@ -155,6 +155,23 @@
 			.logo {
 				width: 50%;
 			}
+			.description {
+				display: none;
+			}
+			.team-members > :not(:first-child) {
+				display: none;
+			}
+			@media screen and (min-width: 1024px) {
+				.logo {
+					width: 70%;
+				}
+				.description {
+					display: block;
+				}
+				.team-members > :not(:first-child) {
+					display: block;
+				}
+			}
 		</style>
 	</head>
 	<body>
@@ -233,6 +250,7 @@
 							src="./Resources/Images/64/iconmonstr-medical-21-120 (1).png"
 							alt="" />
 						<h2 class="text-sm text-gray">Insurance Systems</h2>
+						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.</p>
 					</div>
 
 					<div class="service">
@@ -240,6 +258,7 @@
 							src="./Resources/Images/64/iconmonstr-chart-4-120.png"
 							alt="" />
 						<h2 class="text-sm text-gray">Management Systems</h2>
+						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.</p>
 					</div>
 
 					<div class="service">
@@ -247,42 +266,49 @@
 							src="./Resources/Images/64/iconmonstr-medical-19-120.png"
 							alt="" />
 						<h2 class="text-sm text-gray">Medical Billing</h2>
+						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.</p>
 					</div>
 					<div class="service">
 						<img
 							src="./Resources/Images/64/iconmonstr-basket-21-120.png"
 							alt="" />
 						<h2 class="text-sm text-gray">E-Commerce</h2>
+						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.</p>
 					</div>
 					<div class="service">
 						<img
 							src="./Resources/Images/64/iconmonstr-cube-1-120.png"
 							alt="" />
 						<h2 class="text-sm text-gray">3D Animations</h2>
+						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.</p>
 					</div>
 					<div class="service">
 						<img
 							src="./Resources/Images/64/iconmonstr-code-6-120.png"
 							alt="" />
 						<h2 class="text-sm text-gray">Website Design</h2>
+						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.</p>
 					</div>
 					<div class="service">
 						<img
 							src="./Resources/Images/64/iconmonstr-currency-1-120.png"
 							alt="" />
 						<h2 class="text-sm text-gray">Accounting Systems</h2>
+						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.</p>
 					</div>
 					<div class="service">
 						<img
 							src="./Resources/Images/64/iconmonstr-help-5-120.png"
 							alt="" />
 						<h2 class="text-sm text-gray">Support</h2>
+						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.</p>
 					</div>
 					<div class="service">
 						<img
 							src="./Resources/Images/64/iconmonstr-cloud-24-120 (1).png"
 							alt="" />
 						<h2 class="text-sm text-gray">Cloud Service</h2>
+						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum.</p>
 					</div>
 				</div>
 			</section>
@@ -302,6 +328,33 @@
 							alt="" />
 						<h2 class="text-white">Elmer Amore</h2>
 						<p class="text-white text-xs">Front End Developer</p>
+					</div>
+
+					<div class="team-member">
+						<img
+							class="profile"
+							src="./Resources/Images/user1.jpg"
+							alt="" />
+						<h2 class="text-white">Lui Nicanor</h2>
+						<p class="text-white text-xs">Team Leader</p>
+					</div>
+
+					<div class="team-member">
+						<img
+							class="profile"
+							src="./Resources/Images/user3.jpg"
+							alt="" />
+						<h2 class="text-white">Rae Lustre</h2>
+						<p class="text-white text-xs">Project Manager</p>
+					</div>
+
+					<div class="team-member">
+						<img
+							class="profile"
+							src="./Resources/Images/user2.jpg"
+							alt="" />
+						<h2 class="text-white">Pau Stark</h2>
+						<p class="text-white text-xs">Web Developer</p>
 					</div>
 				</div>
 			</section>
@@ -374,8 +427,7 @@
 						src="./Resources/Images/g+.png"
 						alt="" />
 				</div>
-				<p class="text-xs">© 2017 Thurston Software Solutions, Inc.</p>
-				<p class="text-xs">All Rights Reserved.</p>
+				<p class="text-xs">© 2017 Thurston Software Solutions, Inc. All Rights Reserved.</p>
 			</footer>
 		</main>
 	</body>
